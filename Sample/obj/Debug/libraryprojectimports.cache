@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Paths>
+  <Jars></Jars>
+  <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\__library_projects__\PullToRefreshRecyclerView\library_project_imports\res</ResolvedResourceDirectory>
+    <ResolvedResourceDirectory>E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\__library_projects__\NineOldAndroids\library_project_imports\res</ResolvedResourceDirectory>
+  </ResolvedResourceDirectories>
+  <ResolvedAssetDirectories>
+    <ResolvedAssetDirectory>E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\__library_projects__\PullToRefreshRecyclerView\library_project_imports\assets</ResolvedAssetDirectory>
+  </ResolvedAssetDirectories>
+  <ResolvedEnvironmentFiles />
+  <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\__library_projects__\PullToRefreshRecyclerView.stamp</ResolvedResourceDirectoryStamp>
+    <ResolvedResourceDirectoryStamp>E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\__library_projects__\NineOldAndroids.stamp</ResolvedResourceDirectoryStamp>
+  </ResolvedResourceDirectoryStamps>
+</Paths>

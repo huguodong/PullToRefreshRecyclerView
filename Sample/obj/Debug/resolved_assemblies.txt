@@ -1,0 +1,14 @@
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\Sample.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\Mono.Android.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\mscorlib.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\PullToRefreshRecyclerView.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.Core.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.Xml.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.Xml.Linq.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\Xamarin.Android.Support.v4.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\Xamarin.Android.Support.v7.AppCompat.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\Xamarin.Android.Support.v7.RecyclerView.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.Runtime.Serialization.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\System.ServiceModel.Internals.dll
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\assemblies\NineOldAndroids.dll
