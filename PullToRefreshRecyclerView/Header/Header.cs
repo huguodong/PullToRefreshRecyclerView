@@ -14,6 +14,7 @@ namespace PullToRefreshRecyclerView.Header
 {
     public class Header : BaseHeader
     {
+
         public override void GetItemOffsets(Android.Graphics.Rect outRect, int itemPosition, Android.Support.V7.Widget.RecyclerView parent)
         {
             if (itemPosition == 0)

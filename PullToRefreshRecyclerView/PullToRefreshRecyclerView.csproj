@@ -59,8 +59,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Footer\BaseFooter.cs" />
-    <Compile Include="Footer\LoadMoreFooter.cs" />
+    <Compile Include="Footer\BaseLoadMoreView.cs" />
+    <Compile Include="Footer\DefaultLoadMoreView.cs" />
     <Compile Include="Header\BaseHeader.cs" />
     <Compile Include="Header\Header.cs" />
     <Compile Include="Impl\PrvInterface.cs" />

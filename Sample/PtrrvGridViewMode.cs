@@ -77,6 +77,7 @@ namespace Sample
                 }
                 else
                 {
+                    Toast.MakeText(this, "正在加载中", ToastLength.Short).Show();
                     mAdapter.SetCount(DEFAULT_ITEM_SIZE + ITEM_SIZE_OFFSET);
                     mAdapter.NotifyDataSetChanged();
                     mPtrrv.OnFinishLoading(true, false);

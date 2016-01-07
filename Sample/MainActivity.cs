@@ -26,6 +26,8 @@ namespace Sample
         private void FindViews(){
             mBtnGridViewMode=FindViewById<Button>(Resource.Id.btn_gv_mode);
             mBtnGridViewMode.SetOnClickListener(this);
+            mBtnListViewMode= FindViewById<Button>(Resource.Id.btn_lv_mode);
+            mBtnListViewMode.SetOnClickListener(this);
         }
 
         public void OnClick(View v)
@@ -34,6 +36,9 @@ namespace Sample
             {
                 case Resource.Id.btn_gv_mode :
                     this.StartActivity(new Intent(this,typeof(PtrrvGridViewMode)));
+                    break;
+                case Resource.Id.btn_lv_mode:
+                    this.StartActivity(new Intent(this, typeof(PtrrvListViewMode)));
                     break;
             };
 

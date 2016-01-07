@@ -10,6 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.Support.V7.Widget;
+using PullToRefreshRecyclerView.Footer;
 
 namespace PullToRefreshRecyclerView.Impl
 {
@@ -21,9 +22,10 @@ namespace PullToRefreshRecyclerView.Impl
         void SetEmptyView(View emptyView);
         void SetAdapter(RecyclerView.Adapter adapter);
         void AddHeaderView(View view);
-        //    public void removeHeader();//绉婚櫎header
+        void RemoveHeader();//绉婚櫎header
         void SetFooter(View view);
         void AddOnScrollListener(PullToRefreshRecyclerView.OnScrollListener onScrollLinstener);
+        void SetLoadMoreFooter(BaseLoadMoreView loadMoreFooter);
         RecyclerView.LayoutManager GetLayoutManager();
         void OnFinishLoading(Boolean hasMoreItems, Boolean needSetSelection);
         void SetSwipeEnable(Boolean enable);//设置是否可以下拉

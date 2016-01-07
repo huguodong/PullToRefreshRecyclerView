@@ -30,6 +30,5 @@ E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values\styles.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values-w820dp\dimens.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\R.cs.flag
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\uploadflags.txt
-E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Debug\PullToRefreshRecyclerView.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\Sample.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Debug\Sample.dll.mdb

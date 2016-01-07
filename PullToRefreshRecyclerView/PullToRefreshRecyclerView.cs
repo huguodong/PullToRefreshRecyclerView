@@ -38,7 +38,7 @@ namespace PullToRefreshRecyclerView
 
         private Context mContext;
 
-        private BaseFooter mLoadMoreFooter;
+        private BaseLoadMoreView mLoadMoreFooter;
 
         private PagingableListener mPagingableListener;
 
@@ -296,7 +296,7 @@ namespace PullToRefreshRecyclerView
             this.hasMoreItems = hasMoreItems;
             if (mLoadMoreFooter == null)
             {
-                mLoadMoreFooter = new LoadMoreFooter(mContext, GetRecyclerView());
+                mLoadMoreFooter = new DefaultLoadMoreView(mContext, GetRecyclerView());
             }
             if (!this.hasMoreItems)
             {
@@ -319,6 +319,26 @@ namespace PullToRefreshRecyclerView
             }
             return null;
         }
+
+        public void SetLoadMoreFooter(BaseLoadMoreView loadMoreFooter)
+        {
+            mLoadMoreFooter = loadMoreFooter;
+        }
+
+        public void RemoveHeader()
+        {
+            if (mRootHeader != null)
+            {
+               GetRecyclerView().RemoveItemDecoration(mRootHeader);
+                mRootHeader = null;
+            }
+            if (mHeader != null)
+            {
+                mRootRelativeLayout.RemoveView(mHeader);
+                mHeader = null;
+            }
+        }
+
         private class InterOnScrollListener : RecyclerView.OnScrollListener
         {
             public override void OnScrollStateChanged(RecyclerView recyclerView, int newState)
