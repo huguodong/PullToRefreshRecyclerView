@@ -93,7 +93,7 @@ namespace PullToRefreshRecyclerView
             this.SetColorSchemeResources(Resource.Color.swap_holo_green_bright, Resource.Color.swap_holo_bule_bright,
                     Resource.Color.swap_holo_green_bright, Resource.Color.swap_holo_bule_bright);
 
-            mRecyclerView = (RecyclerView)mRootRelativeLayout.FindViewById(Resource.Id.recycler_view);
+            mRecyclerView = mRootRelativeLayout.FindViewById<RecyclerView>(Resource.Id.recycler_view);
 
             //        mLinearLayoutManager = new LinearLayoutManager(mContext);
             //        mRecyclerView.setLayoutManager(mLinearLayoutManager);
@@ -329,7 +329,7 @@ namespace PullToRefreshRecyclerView
         {
             if (mRootHeader != null)
             {
-               GetRecyclerView().RemoveItemDecoration(mRootHeader);
+                GetRecyclerView().RemoveItemDecoration(mRootHeader);
                 mRootHeader = null;
             }
             if (mHeader != null)
@@ -452,6 +452,6 @@ namespace PullToRefreshRecyclerView
         }
 
 
-       
+
     }
 }
