@@ -32,9 +32,8 @@ namespace Sample
             SetContentView(Resource.Layout.activity_gridview);
             mHandler = new Handler(HandleMessage);
             list = new List<string>();
-            add();
+            Add();
             FindViews();
-            // Create your application here
         }
         private void FindViews()
         {
@@ -45,17 +44,19 @@ namespace Sample
             mPtrrv.SetOnRefreshListener(this);
             mAdapter = new MyAdapter(list, this);
             mPtrrv.SetAdapter(mAdapter);
+            mPtrrv.SetLoadMoreCount(22);//如果小于输入的值则不显示加载更多
             mPtrrv.OnFinishLoading(true, false);
         }
 
-        public void add()
+        public void Add()
         {
-            for (int i = 0; i <= 6; i++)
+            for (int i = 0; i <= 4; i++)
             {
                 list.Add("Brasil");
                 list.Add("Mexico");
                 list.Add("United States");
                 list.Add("Canada");
+
             }
         }
         public void OnLoadMoreItems()
@@ -67,11 +68,31 @@ namespace Sample
         {
             mHandler.SendEmptyMessageDelayed(MSG_CODE_REFRESH, TIME);
         }
+        public override bool OnCreateOptionsMenu(IMenu menu)
+        {
+            var m1 = menu.Add(0, 1, 0, "Add");
+            m1.SetIcon(Resource.Drawable.Icon);
+            return base.OnCreateOptionsMenu(menu);
+        }
+        public override bool OnOptionsItemSelected(IMenuItem item)
+        {
+            switch (item.ItemId)
+            {
+                case 1:
+                    {
+                        Add();
+                        mAdapter.NotifyDataSetChanged();
+                        mPtrrv.OnFinishLoading(true, false);
+                    }
+                    break;
+            }
+            return base.OnOptionsItemSelected(item);
+        }
         public void HandleMessage(Message msg)
         {
             if (msg.What == MSG_CODE_REFRESH)
             {
-                for (int i = 0; i <= 6; i++)
+                for (int i = 0; i < 4; i++)
                 { list.Insert(0, "新添的"); }
                 mAdapter.NotifyDataSetChanged();
                 mPtrrv.SetOnRefreshComplete();
@@ -88,7 +109,7 @@ namespace Sample
                 else
                 {
                     Toast.MakeText(this, "正在加载中", ToastLength.Short).Show();
-                    add();
+                    Add();
                     mAdapter.NotifyDataSetChanged();
                     mPtrrv.OnFinishLoading(true, false);
                 }
