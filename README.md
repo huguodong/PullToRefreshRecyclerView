@@ -4,7 +4,7 @@ recyclerview下拉刷新和上拉加载更多
 
 #  2016/1/12 修改
 
-和[侧滑删除](https://github.com/huguodong/SwipeMenuRecyclerView/)的库合并了。
+和[侧滑删除](https://github.com/huguodong/SwipeMenuRecyclerView/)的库合并了，可以侧滑也可以加载更多和下拉刷新
 
 效果图
 =================
