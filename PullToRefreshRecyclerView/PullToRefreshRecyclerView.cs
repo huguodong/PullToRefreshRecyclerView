@@ -53,10 +53,6 @@ namespace PullToRefreshRecyclerView
         public static PullToRefreshRecyclerView PULL;
         private PullToRefreshRecyclerViewUtil mPtrrvUtil;
         #endregion
-        public interface PagingableListener
-        {
-            void OnLoadMoreItems();
-        }
         public interface OnScrollListener
         {
             void OnScrollStateChanged(RecyclerView recyclerView, int newState);
@@ -77,6 +73,7 @@ namespace PullToRefreshRecyclerView
             this.Setup(context);
 
         }
+  
         private void Setup(Context context)
         {
             PULL = this;
@@ -93,7 +90,7 @@ namespace PullToRefreshRecyclerView
             this.SetColorSchemeResources(Resource.Color.swap_holo_green_bright, Resource.Color.swap_holo_bule_bright,
                     Resource.Color.swap_holo_green_bright, Resource.Color.swap_holo_bule_bright);
 
-            mRecyclerView = mRootRelativeLayout.FindViewById<RecyclerView>(Resource.Id.recycler_view);
+            mRecyclerView = (RecyclerView)mRootRelativeLayout.FindViewById(Resource.Id.recycler_view);
 
             //        mLinearLayoutManager = new LinearLayoutManager(mContext);
             //        mRecyclerView.setLayoutManager(mLinearLayoutManager);
@@ -128,7 +125,7 @@ namespace PullToRefreshRecyclerView
             SetHasMoreItems(false);
         }
 
-        public void SetPagingableListener(PullToRefreshRecyclerView.PagingableListener pagingableListener)
+        public void SetPagingableListener(PagingableListener pagingableListener)
         {
             mPagingableListener = pagingableListener;
         }
@@ -180,38 +177,7 @@ namespace PullToRefreshRecyclerView
             mOnScrollLinstener = onScrollLinstener;
         }
 
-        public void OnFinishLoading(bool hasMoreItems, bool needSetSelection)
-        {
-            if (GetLayoutManager() == null)
-            {
-                return;
-            }
-            if (!hasMoreItems && mLoadMoreFooter != null)
-            {
-
-                //if it's last line, minus the extra height of loadmore
-                mCurScroll = mCurScroll - mLoadMoreFooter.GetLoadMorePadding();
-
-            }
-
-            // if items is too short, don't show loadingview
-            if (GetLayoutManager().ItemCount < mLoadMoreCount)
-            {
-
-                hasMoreItems = false;
-
-            }
-
-            SetHasMoreItems(hasMoreItems);
-
-            isLoading = false;
-
-            if (needSetSelection)
-            {
-                int first = FindFirstVisibleItemPosition();
-                mRecyclerView.ScrollToPosition(--first);
-            }
-        }
+      
         public int FindFirstVisibleItemPosition()
         {
             return mPtrrvUtil.FindFirstVisibleItemPosition(GetLayoutManager());
@@ -262,7 +228,7 @@ namespace PullToRefreshRecyclerView
         }
         public void OnGlobalLayout()
         {
-            if (Android.OS.Build.VERSION.SdkInt >= Android.OS.Build.VERSION_CODES.JellyBean)
+            if (Android.OS.Build.VERSION.SdkInt >=  BuildVersionCodes.JellyBean)
             {
                 mHeader.ViewTreeObserver.RemoveOnGlobalLayoutListener(this);
             }
@@ -329,13 +295,46 @@ namespace PullToRefreshRecyclerView
         {
             if (mRootHeader != null)
             {
-                GetRecyclerView().RemoveItemDecoration(mRootHeader);
+               GetRecyclerView().RemoveItemDecoration(mRootHeader);
                 mRootHeader = null;
             }
             if (mHeader != null)
             {
                 mRootRelativeLayout.RemoveView(mHeader);
                 mHeader = null;
+            }
+        }
+
+        public void OnFinishLoading(bool hasMoreItems, bool needSetSelection, bool delete = false)
+        {
+            if (GetLayoutManager() == null)
+            {
+                return;
+            }
+            if (!hasMoreItems && mLoadMoreFooter != null)
+            {
+
+                //if it's last line, minus the extra height of loadmore
+                mCurScroll = mCurScroll - mLoadMoreFooter.GetLoadMorePadding();
+
+            }
+
+            // if items is too short, don't show loadingview
+            if (GetLayoutManager().ItemCount < mLoadMoreCount)
+            {
+
+                hasMoreItems = false;
+
+            }
+
+            SetHasMoreItems(hasMoreItems);
+
+            isLoading = false;
+
+            if (needSetSelection)
+            {
+                int first = FindFirstVisibleItemPosition();
+                mRecyclerView.ScrollToPosition(--first);
             }
         }
 
@@ -452,6 +451,6 @@ namespace PullToRefreshRecyclerView
         }
 
 
-
+       
     }
 }

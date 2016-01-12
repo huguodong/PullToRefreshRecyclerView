@@ -16,7 +16,7 @@ using Android.Support.V4.Widget;
 namespace Sample
 {
     [Activity(Label = "PtrrvGridViewMode")]
-    public class PtrrvGridViewMode : AppCompatActivity, PullToRefreshRecyclerView.PullToRefreshRecyclerView.PagingableListener, SwipeRefreshLayout.IOnRefreshListener
+    public class PtrrvGridViewMode : AppCompatActivity, PullToRefreshRecyclerView.PagingableListener, SwipeRefreshLayout.IOnRefreshListener
     {
         private PullToRefreshRecyclerView.PullToRefreshRecyclerView mPtrrv;
         private MyAdapter mAdapter;
@@ -71,7 +71,6 @@ namespace Sample
         public override bool OnCreateOptionsMenu(IMenu menu)
         {
             var m1 = menu.Add(0, 1, 0, "Add");
-            m1.SetIcon(Resource.Drawable.Icon);
             return base.OnCreateOptionsMenu(menu);
         }
         public override bool OnOptionsItemSelected(IMenuItem item)
@@ -136,10 +135,11 @@ namespace Sample
             public override void OnBindViewHolder(RecyclerView.ViewHolder viewHolder, int position)
             {
                 var item = list[position];
-
                 // Replace the contents of the view with that element
                 var holder = viewHolder as ViewHolder;
                 holder.TextView.Text = item;
+
+
             }
 
             public override int ItemCount
@@ -149,17 +149,17 @@ namespace Sample
                     return list.Count; ;
                 }
             }
-
-        }
-        public class ViewHolder : RecyclerView.ViewHolder
-        {
-            public TextView TextView { get; set; }
-
-            public ViewHolder(View itemView)
-                : base(itemView)
+            public class ViewHolder : RecyclerView.ViewHolder
             {
-                TextView = itemView.FindViewById<TextView>(Resource.Id.tvContent);
+                public TextView TextView { get; set; }
+
+                public ViewHolder(View itemView)
+                    : base(itemView)
+                {
+                    TextView = itemView.FindViewById<TextView>(Resource.Id.tvContent);
+                }
             }
         }
+      
     }
 }

@@ -13,6 +13,7 @@
     </activity>
     <activity android:label="PtrrvGridViewMode" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.PtrrvGridViewMode" />
     <activity android:label="PtrrvListViewMode" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.PtrrvListViewMode" />
+    <activity android:label="SwipeMenuRecyclerMode" android:name="md5e44603b235f21ebfbb6b3d0f2dc433d5.SwipeMenuRecyclerMode" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="Sample.Sample.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

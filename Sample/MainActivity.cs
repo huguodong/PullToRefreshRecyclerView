@@ -28,6 +28,8 @@ namespace Sample
             mBtnGridViewMode.SetOnClickListener(this);
             mBtnListViewMode= FindViewById<Button>(Resource.Id.btn_lv_mode);
             mBtnListViewMode.SetOnClickListener(this);
+            mBtnListViewMode = FindViewById<Button>(Resource.Id.btn_sw_mode);
+            mBtnListViewMode.SetOnClickListener(this);
         }
 
         public void OnClick(View v)
@@ -39,6 +41,9 @@ namespace Sample
                     break;
                 case Resource.Id.btn_lv_mode:
                     this.StartActivity(new Intent(this, typeof(PtrrvListViewMode)));
+                    break;
+                case Resource.Id.btn_sw_mode:
+                    this.StartActivity(new Intent(this, typeof(SwipeMenuRecyclerMode)));
                     break;
             };
 

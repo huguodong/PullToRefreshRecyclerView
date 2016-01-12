@@ -15,7 +15,7 @@ using Android.Support.V4.Widget;
 namespace Sample
 {
     [Activity(Label = "PtrrvListViewMode")]
-    public class PtrrvListViewMode : Activity, PullToRefreshRecyclerView.PullToRefreshRecyclerView.PagingableListener, SwipeRefreshLayout.IOnRefreshListener
+    public class PtrrvListViewMode : Activity, PullToRefreshRecyclerView.PagingableListener, SwipeRefreshLayout.IOnRefreshListener
     {
         private PullToRefreshRecyclerView.PullToRefreshRecyclerView mPtrrv;
         private PtrrvAdapter mAdapter;

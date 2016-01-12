@@ -69,11 +69,27 @@
     <Compile Include="PtrrvListViewMode.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SwipeMenuRecyclerMode.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\layout\activity_SwGridview.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_simple_menu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\swptrrv_item.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ptrrv_item_content.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ptrrv_item_menu.axml">
+      <SubType>AndroidResource</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\Strings.xml" />
@@ -97,7 +113,9 @@
     <AndroidResource Include="Resources\layout\header.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\ptrrv_item.xml" />
+    <AndroidResource Include="Resources\layout\ptrrv_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
@@ -146,6 +164,9 @@
       <Project>{48dadd67-642d-498d-b6d9-ca5e4722f3aa}</Project>
       <Name>PullToRefreshRecyclerView</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\menu_main.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

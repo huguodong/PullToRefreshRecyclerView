@@ -6,6 +6,5 @@
   <NativeLibraries />
   <Jars>
     <Jar>obj\Release\__library_projects__\NineOldAndroids\library_project_imports\bin\classes.jar</Jar>
-    <Jar>obj\Release\__library_projects__\PullToRefresh\library_project_imports\PullToRefresh.jar</Jar>
   </Jars>
 </Paths>

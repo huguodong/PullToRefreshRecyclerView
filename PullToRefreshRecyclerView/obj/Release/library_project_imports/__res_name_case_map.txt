@@ -1,3 +1,5 @@
 Values/Strings.xml;values/strings.xml
 layout/ptrrv_root_view.xml;layout/ptrrv_root_view.xml
 Values/colors.xml;values/colors.xml
+Values/ids.xml;values/ids.xml
+Values/attrs.xml;values/attrs.xml

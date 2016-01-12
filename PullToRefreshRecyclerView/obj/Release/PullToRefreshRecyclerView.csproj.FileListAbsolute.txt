@@ -13,10 +13,10 @@ E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\andro
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\res\values\strings.xml
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\res\layout\ptrrv_root_view.xml
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\res\values\colors.xml
+E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\res\values\ids.xml
+E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\res\values\attrs.xml
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\R.cs.flag
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\uploadflags.txt
-E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\PullToRefreshRecyclerView.dll.mdb
-E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\bin\Release\PullToRefreshRecyclerView.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\PullToRefreshRecyclerView.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\bin\Release\PullToRefreshRecyclerView.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\PullToRefreshRecyclerView\obj\Release\PullToRefreshRecyclerView.dll.mdb

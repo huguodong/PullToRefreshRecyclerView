@@ -1,3 +1,4 @@
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\Sample.csprojResolveAssemblyReference.cache
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\Sample.dll
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\Sample.pdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\Sample.Sample.apk
@@ -8,10 +9,14 @@ E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\Xamarin.Android.Support.
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\Xamarin.Android.Support.v7.RecyclerView.dll
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\NineOldAndroids.dll
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\PullToRefreshRecyclerView.pdb
-E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\Sample.csprojResolveAssemblyReference.cache
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\Sample.dll
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\Sample.pdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\android\bin\Sample.Sample.apk
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\activity_swlistview.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\item_simple_menu.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\swptrrv_item.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\ptrrv_item_content.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\ptrrv_item_menu.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\values\strings.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\drawable\icon.png
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\layout\activity_gridview.xml
@@ -28,6 +33,7 @@ E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\values\colors.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\values\dimens.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\values\styles.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\values-w820dp\dimens.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\res\menu\menu_main.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\R.cs.flag
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Release\uploadflags.txt
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Release\PullToRefreshRecyclerView.dll.mdb

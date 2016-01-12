@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PullToRefreshRecyclerView", "PullToRefreshRecyclerView\PullToRefreshRecyclerView.csproj", "{48DADD67-642D-498D-B6D9-CA5E4722F3AA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{BD3225D9-ECDF-4DEE-AF91-06EFA89E2D1A}"

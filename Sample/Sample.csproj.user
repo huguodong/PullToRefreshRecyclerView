@@ -3,5 +3,6 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <ProjectView>ShowAllFiles</ProjectView>
+    <SelectedDevice>MIT Droid4X-WIN</SelectedDevice>
   </PropertyGroup>
 </Project>

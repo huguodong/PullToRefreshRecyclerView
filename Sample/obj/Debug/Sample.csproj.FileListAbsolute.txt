@@ -12,6 +12,10 @@ E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\Sample.csprojResolveAssemb
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\Sample.dll
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\Sample.pdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\android\bin\Sample.Sample.apk
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\item_simple_menu.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\swptrrv_item.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\ptrrv_item_content.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\ptrrv_item_menu.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values\strings.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\drawable\icon.png
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\activity_gridview.xml
@@ -28,7 +32,10 @@ E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values\colors.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values\dimens.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values\styles.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\values-w820dp\dimens.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\menu\menu_main.xml
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\R.cs.flag
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\uploadflags.txt
+E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\res\layout\activity_swgridview.xml
+E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Debug\PullToRefreshRecyclerView.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\obj\Debug\Sample.dll.mdb
 E:\xamarin\PullToRefreshRecyclerView\Sample\bin\Debug\Sample.dll.mdb

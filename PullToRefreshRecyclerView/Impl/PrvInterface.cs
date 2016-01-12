@@ -18,7 +18,7 @@ namespace PullToRefreshRecyclerView.Impl
     {
         void SetOnRefreshComplete();
         void SetOnLoadMoreComplete();//onFinishLoading,加载更多完成
-        void SetPagingableListener(PullToRefreshRecyclerView.PagingableListener pagingableListener);
+        void SetPagingableListener(PagingableListener pagingableListener);
         void SetEmptyView(View emptyView);
         void SetAdapter(RecyclerView.Adapter adapter);
         void AddHeaderView(View view);
@@ -27,7 +27,7 @@ namespace PullToRefreshRecyclerView.Impl
         void AddOnScrollListener(PullToRefreshRecyclerView.OnScrollListener onScrollLinstener);
         void SetLoadMoreFooter(BaseLoadMoreView loadMoreFooter);
         RecyclerView.LayoutManager GetLayoutManager();
-        void OnFinishLoading(Boolean hasMoreItems, Boolean needSetSelection);
+        void OnFinishLoading(Boolean hasMoreItems, Boolean needSetSelection, bool delete = false);
         void SetSwipeEnable(Boolean enable);//设置是否可以下拉
         Boolean IsSwipeEnable();//返回当前组件是否可以下拉
         RecyclerView GetRecyclerView();
